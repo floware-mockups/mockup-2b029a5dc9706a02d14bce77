@@ -1,0 +1,390 @@
+{
+  "title": "Gestione interventi di manutenzione stradale",
+  "description": "Bacheca per consultare e seguire gli interventi stradali, con priorità, stato dei lavori, squadre e localizzazione.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "interventi",
+      "title": "Interventi",
+      "description": "Lavori stradali organizzati per stato, con priorità e dati essenziali per la programmazione.",
+      "metrics": [
+        {
+          "label": "Interventi aperti",
+          "value": "8"
+        },
+        {
+          "label": "Bloccanti",
+          "value": "2"
+        },
+        {
+          "label": "Urgenti",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ],
+      "rows": [
+        [
+          "Via dei Nembi",
+          "Ripristino asfalto",
+          "Bloccante",
+          "Da programmare",
+          "Squadra Lumo",
+          "18/06/2026",
+          "45.0712, 11.7904"
+        ],
+        [
+          "Viale delle Vele",
+          "Messa in sicurezza",
+          "Urgente",
+          "In lavorazione",
+          "Squadra Riva",
+          "17/06/2026",
+          "45.0721, 11.7920"
+        ],
+        [
+          "Piazza delle Lanterne",
+          "Riparazione marciapiede",
+          "Normale",
+          "Concluso",
+          "Squadra Nubi",
+          "15/06/2026",
+          "45.0706, 11.7891"
+        ],
+        [
+          "Via del Salice Blu",
+          "Ripristino caditoia",
+          "Urgente",
+          "Da programmare",
+          "Squadra Lumo",
+          "19/06/2026",
+          "45.0698, 11.7915"
+        ],
+        [
+          "Corso delle Maree",
+          "Rifacimento segnaletica",
+          "Normale",
+          "In lavorazione",
+          "Squadra Riva",
+          "18/06/2026",
+          "45.0730, 11.7887"
+        ],
+        [
+          "Via delle Candele",
+          "Chiusura buca",
+          "Bloccante",
+          "In lavorazione",
+          "Squadra Nubi",
+          "16/06/2026",
+          "45.0718, 11.7889"
+        ],
+        [
+          "Largo dei Coralli",
+          "Riparazione cordolo",
+          "Normale",
+          "Concluso",
+          "Squadra Lumo",
+          "14/06/2026",
+          "45.0702, 11.7931"
+        ],
+        [
+          "Via della Bruma",
+          "Ripristino asfalto",
+          "Urgente",
+          "Da programmare",
+          "Squadra Riva",
+          "20/06/2026",
+          "45.0734, 11.7910"
+        ]
+      ],
+      "form": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ]
+    },
+    {
+      "id": "da-programmare",
+      "title": "Da programmare",
+      "description": "Interventi da calendarizzare, ordinati per priorità e data prevista.",
+      "metrics": [
+        {
+          "label": "In attesa",
+          "value": "3"
+        },
+        {
+          "label": "Bloccanti",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ],
+      "rows": [
+        [
+          "Via dei Nembi",
+          "Ripristino asfalto",
+          "Bloccante",
+          "Da programmare",
+          "Squadra Lumo",
+          "18/06/2026",
+          "45.0712, 11.7904"
+        ],
+        [
+          "Via del Salice Blu",
+          "Ripristino caditoia",
+          "Urgente",
+          "Da programmare",
+          "Squadra Lumo",
+          "19/06/2026",
+          "45.0698, 11.7915"
+        ],
+        [
+          "Via della Bruma",
+          "Ripristino asfalto",
+          "Urgente",
+          "Da programmare",
+          "Squadra Riva",
+          "20/06/2026",
+          "45.0734, 11.7910"
+        ],
+        [
+          "Piazzetta dei Muschi",
+          "Riparazione marciapiede",
+          "Normale",
+          "Da programmare",
+          "Squadra Nubi",
+          "22/06/2026",
+          "45.0695, 11.7898"
+        ],
+        [
+          "Via delle Fontane Quieti",
+          "Ripristino caditoia",
+          "Normale",
+          "Da programmare",
+          "Squadra Riva",
+          "23/06/2026",
+          "45.0727, 11.7935"
+        ],
+        [
+          "Ponte delle Lucciole",
+          "Messa in sicurezza",
+          "Urgente",
+          "Da programmare",
+          "Squadra Lumo",
+          "21/06/2026",
+          "45.0740, 11.7901"
+        ]
+      ],
+      "form": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ]
+    },
+    {
+      "id": "in-lavorazione",
+      "title": "In lavorazione",
+      "description": "Interventi assegnati alle squadre e attualmente in esecuzione.",
+      "metrics": [
+        {
+          "label": "In corso",
+          "value": "3"
+        },
+        {
+          "label": "Urgenti",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ],
+      "rows": [
+        [
+          "Viale delle Vele",
+          "Messa in sicurezza",
+          "Urgente",
+          "In lavorazione",
+          "Squadra Riva",
+          "17/06/2026",
+          "45.0721, 11.7920"
+        ],
+        [
+          "Corso delle Maree",
+          "Rifacimento segnaletica",
+          "Normale",
+          "In lavorazione",
+          "Squadra Riva",
+          "18/06/2026",
+          "45.0730, 11.7887"
+        ],
+        [
+          "Via delle Candele",
+          "Chiusura buca",
+          "Bloccante",
+          "In lavorazione",
+          "Squadra Nubi",
+          "16/06/2026",
+          "45.0718, 11.7889"
+        ],
+        [
+          "Rotonda dei Gelsi",
+          "Ripristino asfalto",
+          "Normale",
+          "In lavorazione",
+          "Squadra Lumo",
+          "19/06/2026",
+          "45.0692, 11.7924"
+        ],
+        [
+          "Via dei Petali Grigi",
+          "Riparazione marciapiede",
+          "Normale",
+          "In lavorazione",
+          "Squadra Nubi",
+          "20/06/2026",
+          "45.0742, 11.7894"
+        ],
+        [
+          "Piazza della Nebbia",
+          "Riparazione cordolo",
+          "Urgente",
+          "In lavorazione",
+          "Squadra Lumo",
+          "21/06/2026",
+          "45.0709, 11.7940"
+        ]
+      ],
+      "form": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ]
+    },
+    {
+      "id": "conclusi",
+      "title": "Conclusi",
+      "description": "Interventi completati di recente, disponibili per la consultazione e il controllo finale.",
+      "metrics": [
+        {
+          "label": "Completati",
+          "value": "2"
+        },
+        {
+          "label": "Priorità normale",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ],
+      "rows": [
+        [
+          "Piazza delle Lanterne",
+          "Riparazione marciapiede",
+          "Normale",
+          "Concluso",
+          "Squadra Nubi",
+          "15/06/2026",
+          "45.0706, 11.7891"
+        ],
+        [
+          "Largo dei Coralli",
+          "Riparazione cordolo",
+          "Normale",
+          "Concluso",
+          "Squadra Lumo",
+          "14/06/2026",
+          "45.0702, 11.7931"
+        ],
+        [
+          "Via dei Papaveri d'Argento",
+          "Chiusura buca",
+          "Urgente",
+          "Concluso",
+          "Squadra Riva",
+          "13/06/2026",
+          "45.0725, 11.7908"
+        ],
+        [
+          "Vicolo delle Conchiglie",
+          "Ripristino caditoia",
+          "Normale",
+          "Concluso",
+          "Squadra Nubi",
+          "12/06/2026",
+          "45.0697, 11.7885"
+        ],
+        [
+          "Passeggiata dei Salici",
+          "Rifacimento segnaletica",
+          "Normale",
+          "Concluso",
+          "Squadra Lumo",
+          "11/06/2026",
+          "45.0745, 11.7928"
+        ],
+        [
+          "Via della Lanterna Verde",
+          "Ripristino asfalto",
+          "Urgente",
+          "Concluso",
+          "Squadra Riva",
+          "10/06/2026",
+          "45.0710, 11.7944"
+        ]
+      ],
+      "form": [
+        "Via",
+        "Tipo intervento",
+        "Priorità",
+        "Stato",
+        "Squadra assegnata",
+        "Data prevista",
+        "Coordinate"
+      ]
+    }
+  ],
+  "layout": "bacheca",
+  "theme": {
+    "palette": "terracotta",
+    "fonts": "classico"
+  }
+}
