@@ -492,6 +492,14 @@
       "role": "section",
       "pageId": "interventi",
       "position": "metrics"
+    },
+    {
+      "name": "ContoAllaRovesciaInterventi",
+      "title": "Prossimo intervento programmato",
+      "description": "Individua la prossima data futura e aggiorna ogni minuto i giorni mancanti.",
+      "role": "section",
+      "pageId": "interventi",
+      "position": "table"
     }
   ]
 }
