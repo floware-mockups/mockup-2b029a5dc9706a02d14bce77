@@ -144,6 +144,12 @@
             "label": "Bloccante"
           }
         ],
+        "filters": [
+          {
+            "column": 2,
+            "kind": "values"
+          }
+        ],
         "fields": [
           {
             "column": 8,
@@ -155,7 +161,11 @@
             }
           }
         ]
-      }
+      },
+      "files": [
+        "import",
+        "export"
+      ]
     },
     {
       "id": "da-programmare",
@@ -474,6 +484,14 @@
       "role": "section",
       "pageId": "interventi",
       "position": "top"
+    },
+    {
+      "name": "MeteoCantieri",
+      "title": "Meteo dimostrativo dei cantieri",
+      "description": "Previsioni inventate per tre giorni con avviso di pioggia nella zona dei cantieri.",
+      "role": "section",
+      "pageId": "interventi",
+      "position": "metrics"
     }
   ]
 }
