@@ -28,7 +28,9 @@
         "Stato",
         "Squadra assegnata",
         "Data prevista",
-        "Coordinate"
+        "Coordinate",
+        "Riferimento verbale",
+        "Numero protocollo"
       ],
       "rows": [
         [
@@ -38,7 +40,9 @@
           "Da programmare",
           "Squadra Lumo",
           "18/06/2026",
-          "45.0712, 11.7904"
+          "45.0712, 11.7904",
+          "Verbale manutenzione 2026-014",
+          "2026/00481"
         ],
         [
           "Viale delle Vele",
@@ -47,7 +51,9 @@
           "In lavorazione",
           "Squadra Riva",
           "17/06/2026",
-          "45.0721, 11.7920"
+          "45.0721, 11.7920",
+          "Verbale manutenzione 2026-015",
+          "2026/00482"
         ],
         [
           "Piazza delle Lanterne",
@@ -56,7 +62,9 @@
           "Concluso",
           "Squadra Nubi",
           "15/06/2026",
-          "45.0706, 11.7891"
+          "45.0706, 11.7891",
+          "Verbale manutenzione 2026-016",
+          "2026/00483"
         ],
         [
           "Via del Salice Blu",
@@ -65,7 +73,9 @@
           "Da programmare",
           "Squadra Lumo",
           "19/06/2026",
-          "45.0698, 11.7915"
+          "45.0698, 11.7915",
+          "Verbale manutenzione 2026-017",
+          "2026/00484"
         ],
         [
           "Corso delle Maree",
@@ -74,7 +84,9 @@
           "In lavorazione",
           "Squadra Riva",
           "18/06/2026",
-          "45.0730, 11.7887"
+          "45.0730, 11.7887",
+          "Verbale manutenzione 2026-018",
+          "2026/00485"
         ],
         [
           "Via delle Candele",
@@ -83,7 +95,9 @@
           "In lavorazione",
           "Squadra Nubi",
           "16/06/2026",
-          "45.0718, 11.7889"
+          "45.0718, 11.7889",
+          "Verbale manutenzione 2026-019",
+          "2026/00486"
         ],
         [
           "Largo dei Coralli",
@@ -92,7 +106,9 @@
           "Concluso",
           "Squadra Lumo",
           "14/06/2026",
-          "45.0702, 11.7931"
+          "45.0702, 11.7931",
+          "Verbale manutenzione 2026-020",
+          "2026/00487"
         ],
         [
           "Via della Bruma",
@@ -101,7 +117,9 @@
           "Da programmare",
           "Squadra Riva",
           "20/06/2026",
-          "45.0734, 11.7910"
+          "45.0734, 11.7910",
+          "Verbale manutenzione 2026-021",
+          "2026/00488"
         ]
       ],
       "form": [
@@ -111,8 +129,33 @@
         "Stato",
         "Squadra assegnata",
         "Data prevista",
-        "Coordinate"
-      ]
+        "Coordinate",
+        "Riferimento verbale",
+        "Numero protocollo"
+      ],
+      "behavior": {
+        "v": 1,
+        "rowRules": [
+          {
+            "column": 2,
+            "when": "equals",
+            "value": "Bloccante",
+            "tone": "red",
+            "label": "Bloccante"
+          }
+        ],
+        "fields": [
+          {
+            "column": 8,
+            "showWhen": {
+              "column": 2,
+              "values": [
+                "Bloccante"
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "id": "da-programmare",
@@ -201,7 +244,19 @@
         "Squadra assegnata",
         "Data prevista",
         "Coordinate"
-      ]
+      ],
+      "behavior": {
+        "v": 1,
+        "rowRules": [
+          {
+            "column": 2,
+            "when": "equals",
+            "value": "Bloccante",
+            "tone": "red",
+            "label": "Bloccante"
+          }
+        ]
+      }
     },
     {
       "id": "in-lavorazione",
@@ -290,7 +345,19 @@
         "Squadra assegnata",
         "Data prevista",
         "Coordinate"
-      ]
+      ],
+      "behavior": {
+        "v": 1,
+        "rowRules": [
+          {
+            "column": 2,
+            "when": "equals",
+            "value": "Bloccante",
+            "tone": "red",
+            "label": "Bloccante"
+          }
+        ]
+      }
     },
     {
       "id": "conclusi",
@@ -379,12 +446,34 @@
         "Squadra assegnata",
         "Data prevista",
         "Coordinate"
-      ]
+      ],
+      "behavior": {
+        "v": 1,
+        "rowRules": [
+          {
+            "column": 2,
+            "when": "equals",
+            "value": "Bloccante",
+            "tone": "red",
+            "label": "Bloccante"
+          }
+        ]
+      }
     }
   ],
-  "layout": "bacheca",
+  "layout": "mappa",
   "theme": {
     "palette": "terracotta",
     "fonts": "classico"
-  }
+  },
+  "custom": [
+    {
+      "name": "CalcolatoreCostoInterventi",
+      "title": "Calcolatore del costo stimato",
+      "description": "Calcolo interattivo di imponibile, IVA e totale senza modificare gli interventi.",
+      "role": "section",
+      "pageId": "interventi",
+      "position": "top"
+    }
+  ]
 }
