@@ -564,5 +564,8 @@
       "pageId": "interventi",
       "position": "top"
     }
-  ]
+  ],
+  "colors": {
+    "title": "blue"
+  }
 }
