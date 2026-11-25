@@ -194,7 +194,7 @@ export function rowFromForm(page: MockupPageData, fields: readonly string[]): Mo
 // tutto resta come prima. Qui solo letture difensive: nessun dato in più.
 
 // WZ-2158 (v12): anche i colori della tavolozza semantica (variabili --mk-c-*, theme.css).
-export type MockupRowTone = "danger" | "warning" | "success" | "info" | "muted" | "red" | "orange" | "yellow" | "green" | "purple" | "gray";
+export type MockupRowTone = "danger" | "warning" | "success" | "info" | "muted" | "red" | "orange" | "yellow" | "green" | "purple" | "gray" | "blue";
 // I valori sono già validati dal server (shared/mockupBehavior.ts): qui non si ricontrollano.
 type Rule = { column: number; when: string; value?: string; tone: MockupRowTone; label: string };
 type Validation = {

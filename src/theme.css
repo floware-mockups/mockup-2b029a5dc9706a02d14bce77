@@ -258,6 +258,9 @@
   --mk-c-gray: #4b5563;
   --mk-c-gray-soft: #f3f4f6;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue: #1e40af;
+  --mk-c-blue-soft: #eff6ff;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="blu-istituzionale"] {
   --mk-c-red-nav: #dc2626;
@@ -266,6 +269,7 @@
   --mk-c-green-nav: #15803d;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="blu-notte"] {
   --mk-c-red-nav: #f87171;
@@ -274,6 +278,7 @@
   --mk-c-green-nav: #16a34a;
   --mk-c-purple-nav: #c084fc;
   --mk-c-gray-nav: #9ca3af;
+  --mk-c-blue-nav: #60a5fa;
 }
 :root[data-palette="verde-istituzionale"] {
   --mk-c-red-nav: #dc2626;
@@ -282,6 +287,7 @@
   --mk-c-green-nav: #15803d;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="rosso-civico"] {
   --mk-c-red-nav: #dc2626;
@@ -290,6 +296,7 @@
   --mk-c-green-nav: #15803d;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="bordeaux-oro"] {
   --mk-c-red-nav: #f87171;
@@ -298,6 +305,7 @@
   --mk-c-green-nav: #22c55e;
   --mk-c-purple-nav: #c084fc;
   --mk-c-gray-nav: #9ca3af;
+  --mk-c-blue-nav: #60a5fa;
 }
 :root[data-palette="delta-sabbia"] {
   --mk-c-red-nav: #b91c1c;
@@ -306,6 +314,7 @@
   --mk-c-green-nav: #166534;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #4b5563;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="petrolio"] {
   --mk-c-red-nav: #fca5a5;
@@ -314,6 +323,7 @@
   --mk-c-green-nav: #22c55e;
   --mk-c-purple-nav: #c084fc;
   --mk-c-gray-nav: #9ca3af;
+  --mk-c-blue-nav: #60a5fa;
 }
 :root[data-palette="ardesia"] {
   --mk-c-red-nav: #b91c1c;
@@ -322,6 +332,7 @@
   --mk-c-green-nav: #166534;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #4b5563;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="terracotta"] {
   --mk-c-red-nav: #dc2626;
@@ -330,6 +341,7 @@
   --mk-c-green-nav: #15803d;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue-nav: #1e40af;
 }
 :root[data-palette="verde-oliva"] {
   --mk-c-red-nav: #fca5a5;
@@ -338,6 +350,7 @@
   --mk-c-green-nav: #22c55e;
   --mk-c-purple-nav: #c084fc;
   --mk-c-gray-nav: #9ca3af;
+  --mk-c-blue-nav: #60a5fa;
 }
 :root[data-palette="prugna"] {
   --mk-c-red-nav: #dc2626;
@@ -346,6 +359,7 @@
   --mk-c-green-nav: #15803d;
   --mk-c-purple-nav: #6b21a8;
   --mk-c-gray-nav: #6b7280;
+  --mk-c-blue-nav: #1e40af;
 }
 [data-bg-color="red"] {
   --mk-bg: var(--mk-c-red-soft);
@@ -436,4 +450,19 @@
 }
 [data-mk-text="gray"] {
   color: var(--mk-c-gray);
+}
+[data-bg-color="blue"] {
+  --mk-bg: var(--mk-c-blue-soft);
+}
+[data-title-color="blue"] aside h1 {
+  color: var(--mk-c-blue-nav);
+}
+[data-title-color="blue"] main > h2 {
+  color: var(--mk-c-blue);
+}
+[data-mk-fill="blue"] {
+  background: var(--mk-c-blue-soft);
+}
+[data-mk-text="blue"] {
+  color: var(--mk-c-blue);
 }
